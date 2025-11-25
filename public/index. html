@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TikTok Downloader - Demo</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>TikTok Downloader (Demo)</h1>
+
+    <form id="downloadForm">
+      <label for="url">Masukkan link TikTok:</label>
+      <input id="url" name="url" type="url" placeholder="https://www.tiktok.com/..." required>
+      <button id="submitBtn" type="submit">Cek & Download</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <div id="meta">
+        <img id="thumb" alt="thumbnail" src="" />
+        <div>
+          <h3 id="title"></h3>
+          <p id="status"></p>
+        </div>
+      </div>
+
+      <div id="actions"></div>
+    </section>
+
+    <p class="note">
+      Catatan: Aplikasi demo ini <strong>tidak</strong> men-download konten secara langsung. Hubungkan ke provider resmi/third-party yang legal.
+    </p>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
